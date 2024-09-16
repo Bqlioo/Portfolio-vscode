@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Veille.css" />
+    <script src="Veille.js"></script>
+</head>
+
+<body>
+
+    <div id="MainTop">
+        <header>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="entreprise.html">Entreprise</a>
+                <a href="Realisation.html">Réalisation</a>
+                <a href="Veille.html">Veille</a>
+                <a href="Bilan.html">Bilan</a>
+            </nav>
+        </header>
+    </div>
+
+    <input type="text" id="barre-recherche" placeholder="Rechercher par titre..." oninput="filtrerArticles()">
+
+
+    <select id="critereTri" onchange="trierArticles()">
+        <option value="note">Trier par Note</option>
+        <option value="nom">Trier par Nom</option>
+    </select>
+
+
+    <div class="liste-articles">
+        <div class="article" data-note="3">
+            <h2 class="titre">Version 4.2.0</h2>
+            <a href="https://www.wireshark.org/news/20231115b.html"><img src="Image/4.2.0.png" alt="" width="15%"></a>
+            <p>15 Novembre 2023</p>
+        </div>
+        <div class="article" data-note="5">
+            <h2 class="titre">Version 4.2.2</h2>
+            <a href="https://www.wireshark.org/docs/relnotes/wireshark-4.2.2.html"><img src="Image/4.2.2.png" alt=""
+                    width="15%"></a>
+            <p>4 Janvier 2024</p>
+        </div>
+        <div class="article" data-note="5">
+            <h2 class="titre">Version 4.2.3</h2>
+            <a href="https://www.wireshark.org/docs/relnotes/wireshark-4.2.3.html"><img src="Image/4.2.3.png"></a>
+            <p>14 février 2024</p>
+        </div>
+        <div class="article" data-note="5">
+            <h2 class="titre">Version 4.2.4</h2>
+            <a href="https://www.wireshark.org/docs/relnotes/wireshark-4.2.4.html"><img src="Image/4.2.4.png"></a>
+            <p>27 mars 2024</p>
+        </div>
+    </div>

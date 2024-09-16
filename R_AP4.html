@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="R_AP4.css">
+    <title>Comparaison des outils étudiés</title>
+</head>
+
+<body>
+    <div id="MainTop">
+        <header>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="entreprise.html">Entreprise</a>
+                <a href="Realisation.html">Réalisation</a>
+                <a href="Veille.html">Veille</a>
+                <a href="Bilan.html">Bilan</a>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <h1>Comparaison des outils étudiés</h1>
+
+        <!-- Bloc 1 : Comparaison des outils étudiés -->
+        <div class="bloc" onclick="afficherPDF('ressource/comparaison_outils.pdf')">
+            <h2>Comparaison des outils étudiés</h2>
+        </div>
+
+        <!-- Bloc 2 : Pourquoi VEEAM et pas une autre solution de sauvegarde ? -->
+        <div class="bloc" onclick="afficherPDF('ressource/pourquoi_veeam.pdf')">
+            <h2>Pourquoi VEEAM et pas une autre solution de sauvegarde ?</h2>
+        </div>
+
+        <!-- Bloc 3 : Intégration de VEEAM Backup & Replication dans un PCA/PRA -->
+        <div class="bloc" onclick="afficherPDF('ressource/integration_veeam.pdf')">
+            <h2>Intégration de VEEAM Backup & Replication dans un PCA/PRA</h2>
+        </div>
+
+        <!-- Bloc 4 : Installation de VEEAM -->
+        <div class="bloc" onclick="afficherPDF('ressource/installation_veeam.pdf')">
+            <h2>Installation de VEEAM</h2>
+        </div>
+
+        <!-- Section pour afficher les PDFs -->
+        <div id="pdfViewer" class="pdf-viewer">
+            <iframe id="pdfFrame" src="" width="100%" height="600px"></iframe>
+        </div>
+
+        <!-- Lien de retour -->
+        <div class="return-button-container">
+            <a href="Realisation.html" class="return-button">Retour à la page Réalisation</a>
+        </div>
+    </main>
+
+    <script src="R_AP4.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('Image/fond.avif');
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #00796b;
+    margin: 40px 0 20px;
+    font-size: 2.5rem;
+}
+
+/* Navigation Styles */
+#MainTop {
+    background-color: #00796b;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#MainTop nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#MainTop nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #004d40;
+}
+
+#MainTop nav a:hover,
+#MainTop nav a:focus {
+    color: #00796b;
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
+
+/* Barre de Recherche */
+#barre-recherche {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+    border: 2px solid #00796b;
+    border-radius: 25px;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#barre-recherche::placeholder {
+    color: #00796b;
+}
+
+/* Sélecteur de Tri */
+#critereTri {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 200px;
+    border: 2px solid #00796b;
+    border-radius: 25px;
+    background-color: #ffffff;
+    font-size: 1rem;
+    color: #00796b;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#critereTri option {
+    color: #00796b;
+}
+
+/* Liste des Articles */
+.liste-articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.article {
+    background-color: #ffffff;
+    border: 1px solid #b2dfdb;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.article:hover {
+    transform: translateY(-5px);
+}
+
+.article img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.article img:hover {
+    transform: scale(1.05);
+}
+
+.article .titre {
+    color: #00796b;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.article p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Media Queries */
+
+/* Tablettes */
+@media screen and (max-width: 768px) {
+    .liste-articles {
+        width: 100%;
+    }
+
+    #barre-recherche, #critereTri {
+        width: 100%;
+    }
+}
+
+/* Téléphones */
+@media screen and (max-width: 480px) {
+    .liste-articles {
+        width: 100%;
+    }
+
+    #barre-recherche, #critereTri {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .article {
+        width: 100%;
+        padding: 15px;
+    }
+}

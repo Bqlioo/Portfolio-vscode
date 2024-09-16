@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="R_AP3.css">
+    <title>Équipements aux utilisateurs</title>
+</head>
+
+<body>
+    <div id="MainTop">
+        <header>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="entreprise.html">Entreprise</a>
+                <a href="Realisation.html">Réalisation</a>
+                <a href="Veille.html">Veille</a>
+                <a href="Bilan.html">Bilan</a>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <h1>La mise à disposition des nouveaux équipements aux utilisateurs</h1>
+
+        <!-- Premier bloc : Procédure d'installation -->
+        <div class="bloc">
+            <h2>Procédure d'installation</h2>
+            <div class="sous-bloc" onclick="afficherPDF('ressource/outil_de_deploiement.pdf')">
+                <h3>L'outil de déploiement</h3>
+            </div>
+            <div class="sous-bloc" onclick="afficherPDF('ressource/procedure_et_comparaison.pdf')">
+                <h3>Procédure et comparaison</h3>
+            </div>
+        </div>
+
+        <!-- Deuxième bloc : Bonnes pratiques relative à la sécurité -->
+        <div class="bloc">
+            <h2>Bonnes pratiques relative à la sécurité</h2>
+            <div class="sous-bloc" onclick="afficherPDF('ressource/securite_equipement.pdf')">
+                <h3>La sécurité de cet équipement</h3>
+            </div>
+            <div class="sous-bloc" onclick="afficherPDF('ressource/gestion_remise.pdf')">
+                <h3>Gestion de remise des équipements</h3>
+            </div>
+        </div>
+
+        <!-- Section pour afficher les PDFs -->
+        <div id="pdfViewer" class="pdf-viewer">
+            <iframe id="pdfFrame" src="" width="100%" height="600px"></iframe>
+        </div>
+
+        <!-- Lien de retour -->
+        <div class="return-button-container">
+            <a href="Realisation.html" class="return-button">Retour à la page Réalisation</a>
+        </div>
+    </main>
+
+    <script src="R_AP3.js"></script>
+</body>
+
+</html>
