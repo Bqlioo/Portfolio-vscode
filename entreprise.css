@@ -1,237 +1,182 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
 /* Global Styles */
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-image: url('Image/fond.avif');
-    background-size: cover;
-    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+    background: linear-gradient(135deg, #e0f2f1, #004d00);
+    background-size: cover;
 }
 
-h1, h2 {
-    text-align: center;
-    color: #00796b;
+/* Header Styles */
+#MainTop {
+    background-color: rgba(0, 77, 0, 0.9);
+    /* Semi-transparent Dark Green */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #aaffaa;
+    /* Light Green */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo Styles */
+#Les-grappes img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styles */
+#Nous,
+#Bienvenue,
+#Organigramme,
+#Métier {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+#Nous:hover,
+#Bienvenue:hover,
+#Organigramme:hover,
+#Métier:hover {
+    background: #f1f9f4;
+    /* Very Light Green */
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+    color: #004d00;
+    /* Dark Green */
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
 h1 {
-    margin: 40px 0;
+    border-bottom: 3px solid #004d00;
+    padding-bottom: 10px;
     font-size: 2.5rem;
 }
 
 h2 {
+    color: #006400;
+    /* Slightly Lighter Green */
+    margin-bottom: 15px;
     font-size: 2rem;
-    margin: 20px 0;
 }
 
-/* Navigation Styles */
-#MainTop {
-    background-color: #00796b;
-    padding: 15px 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+h3 {
+    color: #008000;
+    /* Medium Green */
+    margin-bottom: 10px;
+    font-size: 1.5rem;
 }
 
-#MainTop nav {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+/* About Us Section */
+#Nous p {
+    line-height: 1.8;
+    color: #666;
+    font-size: 1rem;
 }
 
-#MainTop nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    padding: 12px 25px;
-    border-radius: 30px;
-    background-color: #004d40;
-}
-
-#MainTop nav a:hover,
-#MainTop nav a:focus {
-    color: #00796b;
-    background-color: #ffffff;
-    transform: scale(1.1);
-}
-
-/* Logo de l'entreprise */
-#Les-grappes {
-    text-align: center;
-    margin: 20px 0;
-}
-
-#Les-grappes img {
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Section Styles */
-.section {
-    background-color: #ffffff;
-    padding: 40px 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 1200px;
-    margin: 20px auto;
-    text-align: center;
-}
-
-/* Blocs À propos de nous et Bienvenue chez ISPS */
-#Nous, #Bienvenue {
-    background-color: #ffffff;
-    padding: 40px 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 800px;
-    margin: 20px auto;
-}
-
-#Nous h2, #Bienvenue h1 {
-    margin-bottom: 20px;
-    color: #00796b;
-}
-
-#Nous p, #Bienvenue p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-}
-
-#Bienvenue {
-    background-color: #e0f2f1;
-    border-left: 5px solid #00796b;
-}
-
-#Nous {
-    background-color: #fafafa;
-    border-right: 5px solid #00796b;
-}
-
-/* Organigramme Styles */
+/* Organigramme Section */
 #Organigramme {
-    background-color: #ffffff;
-    padding: 40px 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 1200px;
-    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .org-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
 }
 
 .org-item {
-    flex: 1 1 calc(20% - 20px);
-    background-color: #f1f8f4;
+    background: #e0f2e9;
+    /* Very Light Green */
     padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    transition: transform 0.3s ease;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .org-item:hover {
+    background: #c8e6c9;
+    /* Lighter Green */
     transform: scale(1.05);
 }
 
-.org-item h3 {
-    color: #00796b;
-    font-size: 1.6rem;
-    margin-bottom: 15px;
-}
-
-.org-item p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-/* Missions Styles */
+/* Missions Section */
 #Métier {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
-    margin: 20px 0;
 }
 
 .metier-item {
-    flex: 1 1 calc(33% - 20px);
-    max-width: 300px;
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    min-width: 250px;
+    background: #e0f2e9;
+    /* Very Light Green */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     text-align: center;
-    padding: 20px;
-    margin: 10px;
+    padding: 15px;
     transition: transform 0.3s ease;
 }
 
-.metier-item:hover {
-    transform: scale(1.05);
-}
-
 .metier-item img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .metier-item p {
-    margin-top: 10px;
-    font-size: 1.1rem;
-    color: #00796b;
+    margin: 10px 0;
+    font-size: 1rem;
 }
 
-/* Responsive Styles */
-
-/* Tablettes */
-@media screen and (max-width: 768px) {
-    .org-item, .metier-item {
-        flex: 1 1 100%;
-    }
-
-    #Nous, #Bienvenue {
-        max-width: 90%;
-    }
+/* Hover Effect */
+.mouvement:hover {
+    transform: scale(1.05);
 }
 
-/* Téléphones */
-@media screen and (max-width: 480px) {
-    #MainTop nav {
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    #Organigramme,
+    #Métier {
         flex-direction: column;
-        align-items: center;
-    }
-
-    #MainTop nav a {
-        margin: 5px 0;
-        padding: 10px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .section {
-        padding: 20px 10px;
-    }
-
-    .org-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .org-item, .metier-item {
-        width: 100%;
     }
 }
-
