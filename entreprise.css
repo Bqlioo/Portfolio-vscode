@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background: linear-gradient(135deg, #e0f2f1, #004d00);
+    background-image: url('Image/fond.avif');
     background-size: cover;
 }
 
