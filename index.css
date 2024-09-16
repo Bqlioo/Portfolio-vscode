@@ -214,23 +214,23 @@ h1 {
 
 /* Styles spécifiques pour chaque catégorie */
 .video-games {
-    background: linear-gradient(135deg, #ff5722, #ff9800);
+    background: linear-gradient(135deg, #00796b, #00796b);
 }
 
 .sport {
-    background: linear-gradient(135deg, #4caf50, #8bc34a);
+    background: linear-gradient(135deg, #00796b, #00796b);
 }
 
 .music {
-    background: linear-gradient(135deg, #2196f3, #03a9f4);
+    background: linear-gradient(135deg, #00796b, #00796b);
 }
 
 .astronomy {
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background: linear-gradient(135deg, #00796b, #00796b);
 }
 
 .manga {
-    background: linear-gradient(135deg, #e91e63, #f48fb1);
+    background: linear-gradient(135deg, #00796b, #00796b);
 }
 
 
