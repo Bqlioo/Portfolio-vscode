@@ -142,6 +142,7 @@ h1 {
     transform: scale(1.1) rotate(5deg);
 }
 
+/* Centre d'interet*/
 #CentreInteret {
     display: flex;
     flex-wrap: wrap;
